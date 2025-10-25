@@ -1,8 +1,12 @@
-def handle_input(av):
+from checks import c_input
+
+def handle_input(av: list) -> bool:
+
     av_len = len(av)
-    if av_len <= 1:
-            print("No argument found")
+
+    if not c_input.is_valid(av_len, av):
+        return (False)
     else:
-        for arg in av[1:]:
-            print("Arguments found:", arg)
-            
+        for i, arg in enumerate(av[1:], start=1):
+            print(f"\nArguments found[{i}]: {arg}")
+    return (True)
