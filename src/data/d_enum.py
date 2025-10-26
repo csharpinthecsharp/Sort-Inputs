@@ -7,3 +7,7 @@ class s_err(StrEnum):
 class s_def(IntEnum):
      MIN_SIZE = 1
      MAX_SIZE = 99999
+
+class s_param:
+     def __init__(self):
+          self.speed = 0

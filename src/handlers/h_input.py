@@ -5,6 +5,7 @@ from handlers import h_read
 import random
 
 def handle_input() -> bool: 
+    param = d_enum.s_param()
     scanned_sort_type = h_read.scan_sort_type()
     if not scanned_sort_type:
         return False
@@ -12,11 +13,16 @@ def handle_input() -> bool:
     scanned_numbers = h_read.scan_numbers_type()
     if not scanned_numbers:
         return False
+    
+    scanned_speed = h_read.scan_speed_type()
+    if not scanned_speed:
+        return False
 
     res_list = create_list(scanned_numbers)
+    param.speed = scanned_speed
 
     timer = d_time.Debug()
-    start_sorting(scanned_sort_type, res_list)
+    start_sorting(scanned_sort_type, res_list, param)
     timer.stop()
     return True
 
@@ -27,7 +33,7 @@ def create_list(nb: int) -> list[int]:
     random.shuffle(list_of_ints)
     return (list_of_ints)
     
-def start_sorting(scanned: int, list_int: list[int]) -> list[int]:
+def start_sorting(scanned: int, list_int: list[int], param) -> list[int]:
     if scanned == 1:
-        res = h_sort.bubble_sort(list_int)
+        res = h_sort.bubble_sort(list_int, param)
         return res
