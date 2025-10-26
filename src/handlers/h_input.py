@@ -21,12 +21,10 @@ def handle_input() -> bool:
     return True
 
 def create_list(nb: int) -> list[int]:
-    min = int(d_enum.s_def.MIN_SIZE)
-    max = int(d_enum.s_def.MAX_SIZE)
-
     list_of_ints: list[int] = []
     for i in range(nb):
-        list_of_ints.append(random.randint(min, max))
+        list_of_ints.append(i)
+    random.shuffle(list_of_ints)
     return (list_of_ints)
     
 def start_sorting(scanned: int, list_int: list[int]) -> list[int]:

@@ -1,10 +1,11 @@
 from data import d_enum
+from handlers import h_print
 
 def read_user_input(sort_tempo, sort, number) -> str:
     if sort == 1:
         match sort_tempo:
             case 1:
-                print("(1): Bubble sort\n")
+                h_print.print_sel_algo()
                 return input("Select sort type $> ")
             case _:
                 return None
@@ -31,7 +32,7 @@ def scan_numbers_type() -> bool | int:
         print(str(d_enum.s_err.inv_entry))
         return False
     number = int(res)
-    if (number > 99999):
+    if (number > int(d_enum.s_def.MAX_SIZE)):
         print(str(d_enum.s_err.max_list))
         return False
     return (number)
