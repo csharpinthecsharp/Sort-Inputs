@@ -1,4 +1,5 @@
-# Sort-Inputs is a small python program that demonstrate sorting algorithms speed.
+# Sort-Inputs 🛟
+## is a small python program that demonstrate sorting algorithms speed
 
 ## How to use ?
 ``` bash
