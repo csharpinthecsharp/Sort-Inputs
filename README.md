@@ -46,7 +46,7 @@ Then pick how fast you want the visualization to run:
 
 Here’s a quick look at the visualizer in action:
 
-![Screencast from 2025-10-27 23-28-44(1)](https://github.com/user-attachments/assets/0c93aa1b-7e65-40e5-a150-3941aef8aac8)
+![Screencast from 2025-10-27 23-31-58](https://github.com/user-attachments/assets/6ad6c728-ee5b-405f-8d9b-0b56a7f0ddbb)
 
 ---
 
