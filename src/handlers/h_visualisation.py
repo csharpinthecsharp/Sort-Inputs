@@ -16,7 +16,10 @@ def visual_sort(av, param):
     last_print_value = -1
     for i in range(len(av)):
         if i - last_print_value >= scale_y:
-            print(str(d_enum.bcolors.BOLD) + "#" * (int(av[i] * scale_x)))
+            if (av[i] == i):
+                print(str(d_enum.bcolors.OKGREEN) + "#" * (int(av[i] * scale_x)))
+            else:
+                print(str(d_enum.bcolors.FAIL) + "#" * (int(av[i] * scale_x)))
             last_print_value = i
     if param.speed > 1:
         if param.speed == 2:

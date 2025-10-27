@@ -14,7 +14,7 @@ def bubble_sort(av: list[int], param) -> list[int]:
             if av[j] > av[j + 1]:
                 av[j], av[j + 1] = av[j + 1], av[j]
         d_time.moove_count += 1
-        h_visualisation.visual_sort(av, param)
+        h_visualisation.visual_sort(av, param,)
     return av
 
 def selection_sort(av: list[int], param) -> list[int]:
