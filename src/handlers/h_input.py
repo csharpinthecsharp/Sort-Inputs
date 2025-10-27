@@ -37,3 +37,6 @@ def start_sorting(scanned: int, list_int: list[int], param) -> list[int]:
     if scanned == 1:
         res = h_sort.bubble_sort(list_int, param)
         return res
+    elif scanned == 2:
+        res = h_sort.selection_sort(list_int, param)
+        return res

@@ -18,12 +18,17 @@ def bubble_sort(av: list[int], param) -> list[int]:
     return av
 
 def selection_sort(av: list[int], param) -> list[int]:
-	d_terminal.t_clear()
-	last_selection = 0
-	sort_pos = 0
-	while not(is_sort(av)):
-		for j in range(len(av) - 1):
-			if last_selection > av[j]:
-				last_selection = av[j]
-                		sort_pos = j
-        return av
+    d_terminal.t_clear()
+    last_selection = 0
+    sort_pos = 0
+    sorted = 0
+    while not(is_sort(av)):
+        for j in range(len(av) - 1):
+            if sorted < len(av):
+                if last_selection > av[j]:
+                    last_selection = av[j]
+                    sort_pos = sorted
+        av[sorted] = last_selection 
+        d_time.moove_count += 1
+        h_visualisation.visual_sort(av, param)
+    return av

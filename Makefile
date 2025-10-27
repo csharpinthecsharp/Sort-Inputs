@@ -6,7 +6,7 @@
 #    By: ltrillar <ltrillar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/26 00:59:41 by ltrillar          #+#    #+#              #
-#    Updated: 2025/10/26 02:03:01 by ltrillar         ###   ########.fr        #
+#    Updated: 2025/10/27 14:26:10 by ltrillar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,28 +21,13 @@ NAME	= sort_script
                                     	
 binary:
 	@echo Compiling..
-	@uv run pyinstaller --onefile --name $(NAME) $(MAIN) > /dev/null 2>&1
-	@chmod +x dist/$(NAME) && mv dist/$(NAME) .
-	@rm -rf dist build __pycache__ *.spec
-	@echo ""
-	@echo "        ██████  ▒█████   ██▀███  ▄▄▄█████▓"
-	@echo "      ▒██    ▒ ▒██▒  ██▒▓██ ▒ ██▒▓  ██▒ ▓▒"
-	@echo "      ░ ▓██▄   ▒██░  ██▒▓██ ░▄█ ▒▒ ▓██░ ▒░"
-	@echo "        ▒   ██▒▒██   ██░▒██▀▀█▄  ░ ▓██▓ ░"
-	@echo "      ▒██████▒▒░ ████▓▒░░██▓ ▒██▒  ▒██▒ ░"
-	@echo "      ▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░ ▒▓ ░▒▓░  ▒ ░░"
-	@echo "      ░ ░▒  ░ ░  ░ ▒ ▒░   ░▒ ░ ▒░    ░"
-	@echo "      ░  ░  ░  ░ ░ ░ ▒    ░░   ░   ░"
-	@echo "            ░      ░ ░     ░"
-	@echo ""
+	@python3 src/main.py
 
 clean:
 	@echo Cleaning "__pycache__"
 	@find . -type d -name "__pycache__" -exec rm -rf {} +
 	@echo Cleaning "*.pyc"
 	@find . -type f -name "*.pyc" -delete
-	@rm sort_script
-	@echo Cleaning executable
 
 re: clean binary
 

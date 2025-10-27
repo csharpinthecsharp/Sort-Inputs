@@ -17,8 +17,11 @@ def read_user_input(sort_tempo, sort, number, speed) -> str:
     return None
 
 def user_sort_type(arg: str) -> int | None:
-    if arg == "1":
-        return 1
+    match arg:
+        case "1":
+            return 1
+        case "2": 
+            return 2
     return None
 
 def user_speed_type(arg: str) -> int | None:
