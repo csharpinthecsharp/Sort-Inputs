@@ -5,6 +5,8 @@
 
 ## => How to use ?
 ``` bash
+$> curl -LsSf https://astral.sh/uv/install.sh | sh
+$> pip install pyinstaller
 $> make
 $> ./sort_script 200 1 3 72 9 218 9328 83
 ```
