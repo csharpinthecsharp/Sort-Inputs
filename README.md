@@ -18,6 +18,5 @@ Select the speed
 (1): Default
 (2): Slow
 (3): Very slow
-
-
+```
 ![Screencastfrom2025-10-2701-21-43-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/21ed842f-c130-4c2c-9a16-b13f86664f05)
