@@ -1,22 +1,55 @@
-# Terminal sorting algorithm visualiser.
-## => is a small python program that demonstrate sorting algorithms speed
+# Terminal Sorting Algorithm Visualizer
 
-## *optionnal: Use [CTRL -] for n = 10.000+ 
+A lightweight Python program that demonstrates and compares the speed of different sorting algorithms directly in your terminal.
 
-## => How to use ?
-``` bash
-$> make OR make re OR make clean
-$> ./sort_script
+---
+
+## Overview
+This tool provides a simple, visual way to observe how sorting algorithms perform on random data arrays of varying sizes and speeds.
+
+Tip: For very large arrays (n ≥ 10,000), use CTRL - to zoom out and better fit the visualization in your terminal.
+
+---
+
+## How to Use
+
+Run with make to build and execute the program:
+```bash
+$ make          # or 'make re' to rebuild, 'make clean' to clean up
+$ ./sort_script
 ```
-Select a sorting algorithm
-``` bash
+
+---
+
+## Choose Your Algorithm
+
+You’ll be prompted to select a sorting method:
+```bash
 (1): Bubble sort
 (2): Selection sort
 ```
-Select the speed
-``` bash
+
+---
+
+## Choose Visualization Speed
+
+Then pick how fast you want the visualization to run:
+```bash
 (1): Default
 (2): Slow
 (3): Very slow
 ```
-![Screencastfrom2025-10-2701-21-43-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/21ed842f-c130-4c2c-9a16-b13f86664f05)
+
+---
+
+## Example
+
+Here’s a quick look at the visualizer in action:
+
+![Sorting Visualizer Demo](https://github.com/user-attachments/assets/21ed842f-c130-4c2c-9a16-b13f86664f05)
+
+---
+
+## TODO
+- Add more algorithms
+- Display real-time stats and more stats overall
