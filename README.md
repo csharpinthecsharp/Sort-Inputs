@@ -46,7 +46,7 @@ Then pick how fast you want the visualization to run:
 
 Here’s a quick look at the visualizer in action:
 
-![Sorting Visualizer Demo](https://github.com/user-attachments/assets/21ed842f-c130-4c2c-9a16-b13f86664f05)
+![Screencast from 2025-10-27 23-28-44(1)](https://github.com/user-attachments/assets/0c93aa1b-7e65-40e5-a150-3941aef8aac8)
 
 ---
 
