@@ -1,4 +1,4 @@
-# Sort-Inputs 🛟
+# Terminal sorting algorithm visualiser.
 ## => is a small python program that demonstrate sorting algorithms speed
 
 ## *optionnal: Use [CTRL -] for n = 10.000+ 
