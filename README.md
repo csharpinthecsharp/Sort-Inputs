@@ -1,6 +1,7 @@
 # Sort-Inputs 🛟
 ## is a small python program that demonstrate sorting algorithms speed
 
+## *optionnal: Use [CTRL -] for n = 10.000+ 
 ## How to use ?
 ``` bash
 $> make
@@ -11,4 +12,4 @@ And then select a sorting algorithm
 (1): Bubble sort
 ```
 
-![gif](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3poZjdiam5mOHB3bWRuZXM4d25leWJhbW13OHhxNWhmeGlqeG9kcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kWEmkWCKlvBklWYmw2/giphy.gif)
+![Screencastfrom2025-10-2701-21-43-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/21ed842f-c130-4c2c-9a16-b13f86664f05)
