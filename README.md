@@ -1,6 +1,6 @@
 # Terminal Sorting Algorithm Visualizer
 
-A lightweight Python program that demonstrates and compares the speed of different sorting algorithms directly in your terminal.
+Python program that demonstrates and compares the speed of different sorting algorithms directly in your terminal.
 
 ---
 
