@@ -36,6 +36,6 @@ def visual_sort(av, param):
             last_print_value = i
     if param.speed > 1:
         if param.speed == 2:
-            time.sleep(0.002)
-        elif param.speed == 3:
             time.sleep(0.005)
+        elif param.speed == 3:
+            time.sleep(0.030)
