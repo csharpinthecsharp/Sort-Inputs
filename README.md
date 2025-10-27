@@ -7,7 +7,7 @@ Python program that demonstrates and compares the speed of different sorting alg
 ## Overview
 This tool provides a simple, visual way to observe how sorting algorithms perform on random data arrays of varying sizes and speeds.
 
-Tip: For very large arrays (n ≥ 10,000), use CTRL - to zoom out and better fit the visualization in your terminal.
+Tip: For very large arrays (n ≥ 10,000), use CTRL - to zoom out for to see more accurate real time sorting.
 
 ---
 
