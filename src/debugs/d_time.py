@@ -1,3 +1,4 @@
+from data import d_enum
 import time
 
 moove_count = 0
@@ -9,5 +10,6 @@ class Debug:
     def stop(self):
         t_final = time.perf_counter() - self.t_start
         self.t_ms = t_final * 1000
+        print(str(d_enum.bcolors.ENDC), end="")
         print(f"\n => Time elapsed: {self.t_ms:.2f} ms")
         print(f" => Moove: {moove_count}")

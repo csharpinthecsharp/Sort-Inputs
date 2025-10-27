@@ -1,4 +1,5 @@
 from debugs import d_terminal
+from data import d_enum
 import time
 import os
 
@@ -15,7 +16,7 @@ def visual_sort(av, param):
     last_print_value = -1
     for i in range(len(av)):
         if i - last_print_value >= scale_y:
-            print("#" * (int(av[i] * scale_x)))
+            print(str(d_enum.bcolors.BOLD) + "#" * (int(av[i] * scale_x)))
             last_print_value = i
     if param.speed > 1:
         if param.speed == 2:
