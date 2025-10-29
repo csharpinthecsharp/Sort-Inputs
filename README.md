@@ -1,3 +1,5 @@
+# IN PROGRESS..
+
 # 📖 Terminal Sorting Algorithm Visualizer
 
 Python program that demonstrates and compares the speed of different sorting algorithms directly in your terminal.
